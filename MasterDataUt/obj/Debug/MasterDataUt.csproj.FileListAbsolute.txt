@@ -1,0 +1,6 @@
+D:\MSC@UCSC\SEMESTER 1\MCS1202 Advanced Software Engineering\Assignments\2.CBSE\LibrarySystem\MasterDataUt\bin\Debug\MasterDataUt.dll
+D:\MSC@UCSC\SEMESTER 1\MCS1202 Advanced Software Engineering\Assignments\2.CBSE\LibrarySystem\MasterDataUt\bin\Debug\MasterDataUt.pdb
+D:\MSC@UCSC\SEMESTER 1\MCS1202 Advanced Software Engineering\Assignments\2.CBSE\LibrarySystem\MasterDataUt\obj\Debug\MasterDataUt.csproj.AssemblyReference.cache
+D:\MSC@UCSC\SEMESTER 1\MCS1202 Advanced Software Engineering\Assignments\2.CBSE\LibrarySystem\MasterDataUt\obj\Debug\MasterDataUt.csproj.CoreCompileInputs.cache
+D:\MSC@UCSC\SEMESTER 1\MCS1202 Advanced Software Engineering\Assignments\2.CBSE\LibrarySystem\MasterDataUt\obj\Debug\MasterDataUt.dll
+D:\MSC@UCSC\SEMESTER 1\MCS1202 Advanced Software Engineering\Assignments\2.CBSE\LibrarySystem\MasterDataUt\obj\Debug\MasterDataUt.pdb

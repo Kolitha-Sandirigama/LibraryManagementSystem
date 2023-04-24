@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+.glossymenu{
+margin: 0px 0;
+padding: 0;
+width: 170px; /*width of menu*/
+border: 1px solid #88befe;
+border-bottom-width: 0;
+}
+
+.glossymenu a.menuitem{
+/*background: black url(../Images/glossyback.gif) repeat-x bottom left;*/
+background-color:#275B9A;
+font: 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: white;
+display: block;
+position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+width: auto;
+padding: 4px 0;
+padding-left: 10px;
+text-decoration: none;
+margin-bottom:2px;
+}
+
+
+.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+color: white;
+}
+
+.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+position: absolute;
+top: 5px;
+right: 5px;
+border: none;
+}
+
+.glossymenu a.menuitem:hover{
+/*background-image: url(../Images/glossyback2.gif);*/
+background-color:#001835;
+}
+
+.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+background: white;
+}
+
+.glossymenu div.submenu ul{ /*UL of each sub menu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.glossymenu div.submenu ul li{
+border-bottom: 1px solid #5c8fe7;
+}
+
+.glossymenu div.submenu ul li a{
+display: block;
+font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: black;
+text-decoration: none;
+padding: 2px 0;
+padding-left: 10px;
+}
+
+.glossymenu div.submenu ul li a:hover{
+background: #DCDBE0;/*DFDCCB*/
+color: white;
+
+}
+
+.wrapper {
+/*we need to tell the browser the size of the warpper div*/
+width:980px;
+/*aligns the page to the center horizontal (x)*/
+margin-left:auto;
+margin-right:auto;
+/*aligns the age to the center vertical (y)*/
+position: absolute;
+left: 50%;
+/*resets the offset (should be half the width and height*/
+margin-left:-490px;
+/*allows us to see wrapper*/
+
+}
+

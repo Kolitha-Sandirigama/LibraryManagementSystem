@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.wrapper {
+/*aligns the page to the center horizontal (x)*/
+margin-left:auto;
+margin-right:auto;
+/*aligns the age to the center vertical (y)*/
+position: absolute;
+left: 50%;
+top:50%;
+/*resets the offset (should be half the width and height*/
+margin-left:-400px;
+margin-top:-250px;
+/*allows us to see wrapper*/
+
+}
+
+div
+{
+width:250px;
+height:120px;
+/*aligns the page to the center horizontal (x)*/
+margin-left:auto;
+margin-right:auto;
+/*aligns the age to the center vertical (y)*/
+position: absolute;
+left: 50%;
+top:50%;
+/*resets the offset (should be half the width and height*/
+margin-left:-15px;
+margin-top:-50px;
+
+	}
+
+.cs tr td 
+{
+    font-family:Tahoma;
+    font-size:11px;
+    color:#323232;
+    
+    }

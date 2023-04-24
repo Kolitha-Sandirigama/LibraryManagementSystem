@@ -1,0 +1,321 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F644DD00-C61B-44E9-8091-91A34044BDEF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AuthenticationWeb</RootNamespace>
+    <AssemblyName>AuthenticationWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44320</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuthenticationWeb\ChangePasswordUI.aspx" />
+    <Content Include="AuthenticationWeb\EmployeeManagement.aspx" />
+    <Content Include="AuthenticationWeb\EmployeeRoleManagement.aspx" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Images\collapse.jpg" />
+    <Content Include="Images\expand.jpg" />
+    <Content Include="Images\Footer.png" />
+    <Content Include="Images\Library_Header_Banner.png" />
+    <Content Include="Images\Library_Login.png" />
+    <Content Include="Images\loading2.gif" />
+    <Content Include="Images\minus.gif" />
+    <Content Include="Images\pixel.gif" />
+    <Content Include="Images\plus.gif" />
+    <Content Include="MasterDataWeb\BookCategoryManagement.aspx" />
+    <Content Include="MasterDataWeb\BookManagement.aspx" />
+    <Content Include="MasterDataWeb\LibraryUserCategoryManagement.aspx" />
+    <Content Include="MasterDataWeb\LibraryUserManagement.aspx" />
+    <Content Include="NoPermission.aspx" />
+    <Content Include="AuthenticationWeb\RoleFunctions.aspx" />
+    <Content Include="AuthenticationWeb\RoleManagement.aspx" />
+    <Content Include="Scripts\AjaxControlToolkit.dll" />
+    <Content Include="Scripts\ddaccordion.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Styles\AjaxControlToolkit.dll" />
+    <Content Include="Styles\Dash_Board.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="SystemDashBoard.aspx" />
+    <Content Include="AuthenticationWeb\SystemFunctions.aspx" />
+    <Content Include="AuthenticationWeb\SystemPageRoleFunctionManagement.aspx" />
+    <Content Include="AuthenticationWeb\SystemPages.aspx" />
+    <Content Include="TransactionWeb\BorrowingBooks.aspx" />
+    <Content Include="TransactionWeb\DueDateTracking.aspx" />
+    <Content Include="TransactionWeb\ReturningBooks.aspx" />
+    <Content Include="UserLogin.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthenticationWebRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuthenticationWebRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthenticationWeb\ChangePasswordUI.aspx.cs">
+      <DependentUpon>ChangePasswordUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthenticationWeb\ChangePasswordUI.aspx.designer.cs">
+      <DependentUpon>ChangePasswordUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthenticationWeb\EmployeeManagement.aspx.cs">
+      <DependentUpon>EmployeeManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthenticationWeb\EmployeeManagement.aspx.designer.cs">
+      <DependentUpon>EmployeeManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthenticationWeb\EmployeeRoleManagement.aspx.cs">
+      <DependentUpon>EmployeeRoleManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthenticationWeb\EmployeeRoleManagement.aspx.designer.cs">
+      <DependentUpon>EmployeeRoleManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDataWeb\BookCategoryManagement.aspx.cs">
+      <DependentUpon>BookCategoryManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterDataWeb\BookCategoryManagement.aspx.designer.cs">
+      <DependentUpon>BookCategoryManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDataWeb\BookManagement.aspx.cs">
+      <DependentUpon>BookManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterDataWeb\BookManagement.aspx.designer.cs">
+      <DependentUpon>BookManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDataWeb\LibraryUserCategoryManagement.aspx.cs">
+      <DependentUpon>LibraryUserCategoryManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterDataWeb\LibraryUserCategoryManagement.aspx.designer.cs">
+      <DependentUpon>LibraryUserCategoryManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDataWeb\LibraryUserManagement.aspx.cs">
+      <DependentUpon>LibraryUserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterDataWeb\LibraryUserManagement.aspx.designer.cs">
+      <DependentUpon>LibraryUserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NoPermission.aspx.cs">
+      <DependentUpon>NoPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoPermission.aspx.designer.cs">
+      <DependentUpon>NoPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AuthenticationWeb\RoleFunctions.aspx.cs">
+      <DependentUpon>RoleFunctions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthenticationWeb\RoleFunctions.aspx.designer.cs">
+      <DependentUpon>RoleFunctions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthenticationWeb\RoleManagement.aspx.cs">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthenticationWeb\RoleManagement.aspx.designer.cs">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemDashBoard.aspx.cs">
+      <DependentUpon>SystemDashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemDashBoard.aspx.designer.cs">
+      <DependentUpon>SystemDashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthenticationWeb\SystemFunctions.aspx.cs">
+      <DependentUpon>SystemFunctions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthenticationWeb\SystemFunctions.aspx.designer.cs">
+      <DependentUpon>SystemFunctions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthenticationWeb\SystemPageRoleFunctionManagement.aspx.cs">
+      <DependentUpon>SystemPageRoleFunctionManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthenticationWeb\SystemPageRoleFunctionManagement.aspx.designer.cs">
+      <DependentUpon>SystemPageRoleFunctionManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthenticationWeb\SystemPages.aspx.cs">
+      <DependentUpon>SystemPages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthenticationWeb\SystemPages.aspx.designer.cs">
+      <DependentUpon>SystemPages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionWeb\BorrowingBooks.aspx.cs">
+      <DependentUpon>BorrowingBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransactionWeb\BorrowingBooks.aspx.designer.cs">
+      <DependentUpon>BorrowingBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionWeb\DueDateTracking.aspx.cs">
+      <DependentUpon>DueDateTracking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransactionWeb\DueDateTracking.aspx.designer.cs">
+      <DependentUpon>DueDateTracking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionWeb\ReturningBooks.aspx.cs">
+      <DependentUpon>ReturningBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransactionWeb\ReturningBooks.aspx.designer.cs">
+      <DependentUpon>ReturningBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AuthenticationUt\AuthenticationUt.csproj">
+      <Project>{d970d615-c8d5-4f96-9d5c-c265c095019c}</Project>
+      <Name>AuthenticationUt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MasterDataUt\MasterDataUt.csproj">
+      <Project>{d8f1d88f-ee3b-4f55-a274-33768725b094}</Project>
+      <Name>MasterDataUt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AuthenticationWebRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AuthenticationWebRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64608</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44320/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

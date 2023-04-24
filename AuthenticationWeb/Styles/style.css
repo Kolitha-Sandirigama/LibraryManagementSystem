@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cs {
+	
+	border: 1px solid #DFDFDF;
+	background-color: #f6f6f6;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-family: Tahoma;
+	color: #323232;
+	font-size:11px;
+	width:802px;
+}
+
+.cs td, .cs th {
+	/*border-top-color: white;*/
+	/*border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;*/
+	/*color: #555;*/
+}
+
+.cs th {
+	/*text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;*/
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-weight: bold;
+	padding: 2px 4px 2px;
+	text-align: left;
+	/*line-height: 1.3em;*/
+	font-size: 11px;
+	background-color:#275B9A;
+	color:#ffffff;
+	max-height:22px;
+	
+}
+
+
+
+
+.cs td {
+	
+	/*background-image:url(../Images/tdbg.png);
+	background-position:0 0;
+	background-repeat:repeat-x;*/
+	padding: 2px 2px 0px;
+	vertical-align: top;
+	max-height:19px;
+	
+	
+}
+
+
+.cs input[type=button]
+
+{
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 0px 0px;
+	background-color: #d9d9d9;
+	border: 1px solid #999;
+	color: #666;
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0px 5px;
+	height: 18px;
+	}
+	
+.cs input[type=button]:hover
+{
+	background-color: #275B9A;
+	color:#FFF;
+}
+
+.cs input[type=button]:active
+{
+	background-color: #5c8fe7;
+	color:#FFF;
+	}
+	
+	
+input {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 0px 0px;
+	border: 1px solid #999;
+	color: #323232;
+	font-family: Tahoma;
+	font-size: 11px;
+	padding: 2px 2px;
+	/*size:20px;*/
+	border-radius:5px;
+    /*font-weight: 700;*/
+    /*text-align: center;*/
+}
+
+.cs input[type=radio] 
+	{
+		width:20px;
+		border:none;
+		/*margin:0px;*/
+		/*padding:0px;*/
+	}
+	
+
+select {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 0px 0px;
+	border: 1px solid #999;
+	color: #323232;
+	font-family: Tahoma;
+	font-size: 11px;
+	padding: 0px 2px;
+	}
+
+
+
+h1.style1
+{
+	font-family: sans-serif;
+	color: #a9d54c;
+	font-size:16px;
+	text-align:left;
+	
+		
+	}
+	
+	h2.style1
+{
+	font-family: sans-serif,"Bitstream Vera Sans",Helvetica,Verdana,Arial;
+	text-align:center;
+	color:#333333;
+	font-size:12px;
+	}
+
+
+.cal
+{
+	padding: 0px;
+	margin: 0px;
+	background-image:url(../Images/calendar.png);
+	background-color:transparent;
+	border:none;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	
+}
+	
+.cal:hover
+{
+	background-image:url(../Images/calendar2.png);
+}
+
+	
+
+.divGroup
+    {
+        border-radius:10px;
+        border: 2px solid #DDDDDD;
+        width:788px;
+        padding:5px;
+        background-color:#FCFCFC;
+    }
+    
+    .divGroupEx
+    {
+        min-height:100px;
+    
+    }
+    
+    /* Styles for table inside divGroup */
+    
+    .cs1 {
+	
+	/*border: 1px solid #DFDFDF;*/
+	background-color: #f6f6f6;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-family: Tahoma;
+	color: #323232;
+	font-size:11px;
+	width:778px;
+	margin:5px;
+}
+
+.cs1 td, .cs1 th {
+	/*border-top-color: white;*/
+	/*border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;*/
+	/*color: #555;*/
+	
+}
+
+.cs1 th {
+	
+	font-family: Tahoma;
+	font-weight: normal;
+	color: #333333;
+	padding: 2px 4px 2px;
+	text-align: Left;
+	font-size: 14px;
+	/*background-color:#275B9A;
+	color:#ffffff;*/
+	height:21px;
+	border-bottom:1px solid #CCCCCC;
+	font-weight:bold;
+	letter-spacing:1px;
+	
+}
+
+
+
+
+.cs1 td {
+	
+	padding: 2px 2px 0px;
+	vertical-align: top;
+	height:19px;
+	
+	
+}
+
+
+.cs1 input[type=button]
+
+{
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 0px 0px;
+	background-color: #d9d9d9;
+	border: 1px solid #999;
+	color: #666;
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0px 5px;
+	height: 18px;
+	
+	}
+	
+.cs1 input[type=button]:hover
+{
+	background-color: #275B9A;
+	color:#FFF;
+}
+
+.cs1 input[type=button]:active
+{
+	background-color: #5c8fe7;
+	color:#FFF;
+	}
+	
+
+.cs1 input[type=radio] 
+	{
+		width:20px;
+		border:none;
+		
+	}
+
+.breadcrumb
+   {
+        font-size:13px;
+        letter-spacing:1px;
+        color:#6c6c6c;
+        font-weight:bold;
+        font-family:Tahoma;
+        padding:5px;
+        text-align:center;
+        width:775px; 
+    
+    }
+	
+    .watermark
+   {
+        font-family: Tahoma;
+        color: #bbbbbb;
+        font-size:11px;
+   }

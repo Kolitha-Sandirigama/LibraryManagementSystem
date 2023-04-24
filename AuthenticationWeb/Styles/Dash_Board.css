@@ -1,0 +1,379 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.csb {
+	
+	border: 1px solid #DFDFDF;
+	background-color: #F9F9F9;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-family: Tahoma;
+	color: #323232;
+	font-size:11px;
+	height:100%;
+	width:235px
+
+
+}
+
+
+	
+
+.csb td, .cs th {
+	/*border-top-color: white;*/
+	border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	/*color: #555;*/
+}
+.csb th {
+	/*text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;*/
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-weight: bold;
+	padding: 2px 4px 2px;
+	text-align: left;
+	/*line-height: 1.3em;*/
+	font-size: 14px;
+	background-color:#5c8fe7;/*d9d9d9*//*5c8fe7*/
+	color:#ffffff;
+	height:15px;
+	
+}
+
+
+
+
+.csb td {
+	
+	background-image:url(../Images/tdbg.png);
+	background-position:0 0;
+	background-repeat:repeat-x;
+	padding: 2px 2px 0px;
+	vertical-align: top;
+	height:19px;
+	border: 1px solid #5c8fe7;/*Newly Added*/
+	
+	
+}
+
+
+input {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 0px 0px;
+	border: 1px solid #999;
+	color: #323232;
+	font-family: Tahoma;
+	font-size: 11px;
+	padding: 2px 2px;
+	height: 12px;
+	size:20px;
+	
+}
+
+select {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 0px 0px;
+	border: 1px solid #999;
+	color: #323232;
+	font-family: Tahoma;
+	font-size: 11px;
+	padding: 0px 2px;
+	height: 18px;
+}
+
+/*table
+{
+	
+	width:600px;
+	}
+*/
+
+.csb input[type=button]
+
+{
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0976562) 0px 1px 0px 0px;
+	background-color: #d9d9d9;
+	border: 1px solid #999;
+	color: #666;
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0px 5px;
+	height: 18px;
+	}
+	
+.csb input[type=button]:hover
+{
+	background-color: #a9d54c;
+	color:#FFF;
+}
+
+.csb input[type=button]:active
+{
+	background-color: #5c8fe7;
+	color:#FFF;
+	}
+
+
+.cal
+{
+	padding: 0px;
+	margin: 0px;
+	background-image:url(../Images/calendar.png);
+	background-color:none;
+	border:none;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	
+}
+	
+.cal:hover
+{
+	background-image:url(../Images/calendar2.png);
+}
+
+	
+.csb input[type=radio] 
+	{
+		width:20px;
+		border:none;
+		/*margin:0px;*/
+		/*padding:0px;*/
+	}
+
+/*-----------------Grren----------------*/
+
+.csg {
+	
+	border: 1px solid #DFDFDF;
+	background-color: #F9F9F9;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-family: Tahoma;
+	color: #323232;
+	font-size:11px;
+	height:100%;
+	width:235px;
+
+
+}
+
+
+	
+
+.csg td, .cs th {
+	/*border-top-color: white;*/
+	border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	/*color: #555;*/
+}
+.csg th {
+	/*text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;*/
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-weight: bold;
+	padding: 2px 4px 2px;
+	text-align: left;
+	/*line-height: 1.3em;*/
+	font-size: 14px;
+	background-color:#a9d54c;/*d9d9d9*//*5c8fe7*/
+	color:#ffffff;
+	height:15px;
+	
+}
+
+
+
+
+.csg td {
+	
+	background-image:url(../Images/tdbg.png);
+	background-position:0 0;
+	background-repeat:repeat-x;
+	padding: 2px 2px 0px;
+	vertical-align: top;
+	height:19px;
+	border: 1px solid #a9d54c;/*Newly Added*/
+	
+	
+}
+
+
+/*------------------------ Red -----------------*/
+
+
+.csr {
+	
+	border: 1px solid #DFDFDF;
+	background-color: #F9F9F9;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-family: Tahoma;
+	color: #323232;
+	font-size:11px;
+	height:100%;
+	width:235px;
+
+
+}
+
+
+	
+
+.csr td, .cs th {
+	/*border-top-color: white;*/
+	border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	/*color: #555;*/
+}
+.csr th {
+	/*text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;*/
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-weight: bold;
+	padding: 2px 4px 2px;
+	text-align: left;
+	/*line-height: 1.3em;*/
+	font-size: 14px;
+	background-color:#ef485b;/*d9d9d9*//*5c8fe7*/
+	color:#ffffff;
+	height:15px;
+	
+}
+
+
+
+
+.csr td {
+	
+	background-image:url(../Images/tdbg.png);
+	background-position:0 0;
+	background-repeat:repeat-x;
+	padding: 2px 2px 0px;
+	vertical-align: top;
+	height:19px;
+	border: 1px solid #ef485b;/*Newly Added*/
+	
+	
+}
+
+/* -------Styles for new dash Board----------*/
+
+.db {
+	
+	border: 2px solid #d9d9d9;
+	background-color: #ffffff;   /*#d9d9d9;*/
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font-family: Tahoma;
+	color: #323232;
+	font-size:11px;
+	height:100%;
+	width:200px;
+	border-radius:5px;
+
+
+}
+
+
+	
+
+.db td, .cs th {
+	/*border-top-color: white;*/
+	border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	text-align:center;
+	/*color: #555;*/
+}
+.db th {
+	/*text-shadow: rgba(255, 255, 255, 0.796875) 0px 1px 0px;*/
+	font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	font-weight: bold;
+	padding: 2px 4px 2px;
+	text-align: left;
+	/*line-height: 1.3em;*/
+	font-size: 14px;
+	/*background-color: #ef485b;/*#ef485b;*//*d9d9d9*//*5c8fe7*/*/
+	color:#ffffff;
+	height:15px;
+	border:none;
+	/*border: 1px solid #ef485b;*/
+	text-align:center;
+	border-radius:5px;
+	
+}
+
+
+
+
+.db td {
+	
+	background-image:url(../Images/tdbg.png);
+	background-position:0 0;
+	background-repeat:repeat-x;
+	padding: 2px 2px 0px;
+	vertical-align: top;
+	height:19px;
+	/*border: 1px solid #ef485b; */
+	
+	
+}
+
+
+
+
+/* ---------- Comman table ---------------*/
+
+.group
+{
+    border-radius:10px;
+    border:2px solid #b1aeae;/*d9d9d9d*/
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    margin:5px;
+    
+    
+    
+    }
+
+
+
+
+/* -------------------- Dash board SCAD Online  ---------------------------*/
+
+
+.Main_Table
+{
+    Width:800px;
+    text-align:center;
+      
+    }
+
+.Part1 
+
+{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color:#fBfBfB;
+    
+    
+    }
+
+.Part1 tr td
+{
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 16px;
+    color :#696969;    
+
+    }
+    
+.Part1 tr td a
+{
+    
+    font-size: 12px;
+    border:none;
+          
+    }
