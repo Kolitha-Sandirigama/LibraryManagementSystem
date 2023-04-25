@@ -13,5 +13,7 @@ namespace MasterDataUt.Controller
         List<Book> getActiveBookList();
         List<LibraryUser> getActiveUserList();
         void addBorrowingBookRecord(int bookUID, int UserUID, DateTime returnDate, String UserID);
+        void updateBorrowingBookRecord(int bookUID, int UserUID, DateTime returnDate, String UserID);
+        bool checkIsBookAvailableByBookUID(int bookUID);
     }
 }

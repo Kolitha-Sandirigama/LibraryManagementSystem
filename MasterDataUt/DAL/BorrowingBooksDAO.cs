@@ -11,5 +11,7 @@ namespace MasterDataUt.DAL
     {
         List<BookBorrowingRecord> findByAll();
         void addBorrowingBookRecord(BookBorrowingRecord bookBorrowingRecord, String UserID);
+        void updateBorrowingBookRecord(BookBorrowingRecord bookBorrowingRecord, String UserID);
+        bool checkIsBookAvailableByBookUID(int bookUID);
     }
 }

@@ -28,7 +28,7 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>Total Estimates</td>
+                        <td>Total Books</td>
                     </tr>
                     
                     <tr>
@@ -52,7 +52,7 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>Total Bills</td>
+                        <td>Total Users</td>
                     </tr>
                     <tr>
                         <td>
@@ -72,7 +72,7 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>Inprogress Estimates</td>
+                        <td>Available Books</td>
                     </tr>
                     
                     <tr>
@@ -96,7 +96,7 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>Inprogress Bills</td>
+                        <td>Borrowing Books</td>
                     </tr>
                     <tr>
                         <td>

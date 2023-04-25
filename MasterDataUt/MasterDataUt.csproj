@@ -52,6 +52,8 @@
     <Compile Include="Controller\LibraryUserCategoryControllerImpl.cs" />
     <Compile Include="Controller\LibraryUserController.cs" />
     <Compile Include="Controller\LibraryUserControllerImpl.cs" />
+    <Compile Include="Controller\ReturningBooksController.cs" />
+    <Compile Include="Controller\ReturningBooksControllerImpl.cs" />
     <Compile Include="DAL\BookDAO.cs" />
     <Compile Include="DAL\BookDAOImpl.cs" />
     <Compile Include="DAL\BorrowingBooksDAO.cs" />
@@ -62,9 +64,12 @@
     <Compile Include="DAL\BookCategoryDAOImpl.cs" />
     <Compile Include="DAL\LibraryUserCategoryDAO.cs" />
     <Compile Include="DAL\LibraryUserCategoryDAOImpl.cs" />
+    <Compile Include="DAL\ReturningBooksDAO.cs" />
+    <Compile Include="DAL\ReturningBooksDAOImpl.cs" />
     <Compile Include="Domain\Book.cs" />
     <Compile Include="Domain\BookBorrowingRecord.cs" />
     <Compile Include="Domain\BookCategory.cs" />
+    <Compile Include="Domain\BookReturningRecord.cs" />
     <Compile Include="Domain\LibraryUser.cs" />
     <Compile Include="Domain\LibraryUserCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

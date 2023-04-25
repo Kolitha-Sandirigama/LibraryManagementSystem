@@ -101,7 +101,6 @@
     <Content Include="AuthenticationWeb\SystemPageRoleFunctionManagement.aspx" />
     <Content Include="AuthenticationWeb\SystemPages.aspx" />
     <Content Include="TransactionWeb\BorrowingBooks.aspx" />
-    <Content Include="TransactionWeb\DueDateTracking.aspx" />
     <Content Include="TransactionWeb\ReturningBooks.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="Web.config" />
@@ -231,13 +230,6 @@
     </Compile>
     <Compile Include="TransactionWeb\BorrowingBooks.aspx.designer.cs">
       <DependentUpon>BorrowingBooks.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="TransactionWeb\DueDateTracking.aspx.cs">
-      <DependentUpon>DueDateTracking.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="TransactionWeb\DueDateTracking.aspx.designer.cs">
-      <DependentUpon>DueDateTracking.aspx</DependentUpon>
     </Compile>
     <Compile Include="TransactionWeb\ReturningBooks.aspx.cs">
       <DependentUpon>ReturningBooks.aspx</DependentUpon>

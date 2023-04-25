@@ -86,15 +86,16 @@ namespace AuthenticationWeb.TransactionWeb
         {
             BorrowingBooksController borrowingBooksController = new BorrowingBooksControllerImpl();
 
-//            if (!borrowingBooksController.checkIsExistsByBookCategoryName(ddBook.SelectedValue.Trim().ToString()))
-//            {
-                borrowingBooksController.addBorrowingBookRecord(Int32.Parse(ddBook.SelectedValue), Int32.Parse(ddUserID.SelectedValue), DateTime.Parse(txtReturnDate.Text), Session["USER_CODE"].ToString());
-                DisplayMessage(lblMessage.Text = "Saved Successfully.", AuthenticationWeb.AuthenticationWebRes.SUCCESS_COLOUR);
-//            }
-//            else
-//            {
-//                DisplayMessage(lblMessage.Text = "Already Added.", AuthenticationWeb.AuthenticationWebRes.ERROR_COLOUR);
-//            }
+            if (borrowingBooksController.checkIsBookAvailableByBookUID(Int32.Parse(ddBook.SelectedValue)))
+            {
+            borrowingBooksController.addBorrowingBookRecord(Int32.Parse(ddBook.SelectedValue), Int32.Parse(ddUserID.SelectedValue), DateTime.Parse(txtReturnDate.Text), Session["USER_CODE"].ToString());
+            borrowingBooksController.updateBorrowingBookRecord(Int32.Parse(ddBook.SelectedValue), Int32.Parse(ddUserID.SelectedValue), DateTime.Parse(txtReturnDate.Text), Session["USER_CODE"].ToString());
+            DisplayMessage(lblMessage.Text = "Saved Successfully.", AuthenticationWeb.AuthenticationWebRes.SUCCESS_COLOUR);
+            }
+            else
+            {
+                DisplayMessage(lblMessage.Text = "Book is not available.", AuthenticationWeb.AuthenticationWebRes.ERROR_COLOUR);
+            }
 
 
             this.clearData();

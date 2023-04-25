@@ -36,5 +36,19 @@ namespace MasterDataUt.Controller
             borrowingBooksDAO.addBorrowingBookRecord(bookBorrowingRecord, UserID);
         }
 
+        public void updateBorrowingBookRecord(int bookUID, int UserUID, DateTime returnDate, String UserID)
+        {
+            BorrowingBooksDAO borrowingBooksDAO = new BorrowingBooksDAOImpl();
+            BookBorrowingRecord bookBorrowingRecord = new BookBorrowingRecord(bookUID, UserUID, returnDate);
+            borrowingBooksDAO.updateBorrowingBookRecord(bookBorrowingRecord, UserID);
+        }
+
+        public bool checkIsBookAvailableByBookUID(int bookUID) 
+        {
+            BorrowingBooksDAO borrowingBooksDAO = new BorrowingBooksDAOImpl();
+            return borrowingBooksDAO.checkIsBookAvailableByBookUID(bookUID);
+
+        }
+
     }
 }

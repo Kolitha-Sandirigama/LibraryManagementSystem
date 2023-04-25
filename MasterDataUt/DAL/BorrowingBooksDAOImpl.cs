@@ -66,5 +66,60 @@ namespace MasterDataUt.DAL
                 throw ex;
             }
         }
+
+
+        public void updateBorrowingBookRecord(BookBorrowingRecord bookBorrowingRecord, String UserID)
+        {
+            try
+            {
+                string connetionString = ConfigurationManager.ConnectionStrings["conns"].ConnectionString;
+                SqlConnection cnn = new SqlConnection(connetionString);
+                cnn.Open();
+
+                string sql = "UPDATE Book SET IsAvailable = 'False' WHERE BookUID = '" + bookBorrowingRecord.bookUID + "' ";
+                SqlCommand command = new SqlCommand(sql, cnn);
+                command.ExecuteNonQuery();
+                command.Dispose();
+                cnn.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public bool checkIsBookAvailableByBookUID(int bookUID)
+        {
+            try
+            {
+                string connetionString = ConfigurationManager.ConnectionStrings["conns"].ConnectionString;
+                SqlConnection cnn = new SqlConnection(connetionString);
+                cnn.Open();
+
+                String sql = "SELECT BookUID FROM Book WHERE IsAvailable = 'True' AND BookUID = '" + bookUID + "' ";
+
+                SqlCommand command = new SqlCommand(sql, cnn);
+                SqlDataReader dataReader = command.ExecuteReader();
+                bool isAvailable = false;
+                while (dataReader.Read())
+                {
+                    if (dataReader.GetInt32(0) > 0) 
+                    {
+                        isAvailable = true;
+                    }
+                }
+                dataReader.Close();
+                command.Dispose();
+                cnn.Close();
+
+                return isAvailable;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
     }
 }
