@@ -242,5 +242,101 @@ namespace MasterDataUt.DAL
                 throw ex;
             }
         }
+
+        public int getTotalActiveBookCount()
+        {
+            try
+            {
+                string connetionString = ConfigurationManager.ConnectionStrings["conns"].ConnectionString;
+                SqlConnection cnn = new SqlConnection(connetionString);
+                cnn.Open();
+
+
+                String sql = "SELECT Count(BookUID) FROM Book WHERE IsActive = '1' ";
+
+                SqlCommand command = new SqlCommand(sql, cnn);
+                SqlDataReader dataReader = command.ExecuteReader();
+                int maxID = 0;
+
+                while (dataReader.Read())
+                {
+                    maxID = dataReader.GetInt32(0);
+                }
+
+                dataReader.Close();
+                command.Dispose();
+                cnn.Close();
+
+                return maxID;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int getTotalAvailableBookCount()
+        {
+            try
+            {
+                string connetionString = ConfigurationManager.ConnectionStrings["conns"].ConnectionString;
+                SqlConnection cnn = new SqlConnection(connetionString);
+                cnn.Open();
+
+
+                String sql = "SELECT Count(BookUID) FROM Book WHERE IsActive = '1' AND  IsAvailable = 'True' ";
+
+                SqlCommand command = new SqlCommand(sql, cnn);
+                SqlDataReader dataReader = command.ExecuteReader();
+                int maxID = 0;
+
+                while (dataReader.Read())
+                {
+                    maxID = dataReader.GetInt32(0);
+                }
+
+                dataReader.Close();
+                command.Dispose();
+                cnn.Close();
+
+                return maxID;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int getTotalBorrowedBookCount()
+        {
+            try
+            {
+                string connetionString = ConfigurationManager.ConnectionStrings["conns"].ConnectionString;
+                SqlConnection cnn = new SqlConnection(connetionString);
+                cnn.Open();
+
+
+                String sql = "SELECT Count(BookUID) FROM Book WHERE IsActive = '1'  AND  IsAvailable = 'False' ";
+
+                SqlCommand command = new SqlCommand(sql, cnn);
+                SqlDataReader dataReader = command.ExecuteReader();
+                int maxID = 0;
+
+                while (dataReader.Read())
+                {
+                    maxID = dataReader.GetInt32(0);
+                }
+
+                dataReader.Close();
+                command.Dispose();
+                cnn.Close();
+
+                return maxID;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

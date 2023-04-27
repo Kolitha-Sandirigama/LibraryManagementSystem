@@ -17,6 +17,8 @@ namespace MasterDataUt.DAL
         Book findByBookISBNAndBookUID(int BookUID, string ISBN);
         List<Book> findByActiveAll();
         int getNextSequenceNo();
-
+        int getTotalActiveBookCount();
+        int getTotalAvailableBookCount();
+        int getTotalBorrowedBookCount();
     }
 }

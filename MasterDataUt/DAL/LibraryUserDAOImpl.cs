@@ -223,6 +223,7 @@ namespace MasterDataUt.Controller
 
         }
 
+        
         public int getNextSequenceNo()
         { 
          try
@@ -233,6 +234,38 @@ namespace MasterDataUt.Controller
 
 
                 String sql = "SELECT ISNULL(MAX(LibraryUserUID),0) FROM LibraryUser ";
+
+                SqlCommand command = new SqlCommand(sql, cnn);
+                SqlDataReader dataReader = command.ExecuteReader();
+                int maxID = 0;
+
+                while (dataReader.Read())
+                {
+                    maxID = dataReader.GetInt32(0);
+                }
+
+                dataReader.Close();
+                command.Dispose();
+                cnn.Close();
+
+                return maxID;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int getTotalActiveUserCount()
+        {
+            try
+            {
+                string connetionString = ConfigurationManager.ConnectionStrings["conns"].ConnectionString;
+                SqlConnection cnn = new SqlConnection(connetionString);
+                cnn.Open();
+
+
+                String sql = "SELECT COUNT(LibraryUserUID) FROM LibraryUser WHERE ISACTIVE = '1' ";
 
                 SqlCommand command = new SqlCommand(sql, cnn);
                 SqlDataReader dataReader = command.ExecuteReader();

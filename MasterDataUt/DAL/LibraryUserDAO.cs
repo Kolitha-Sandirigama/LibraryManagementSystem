@@ -17,5 +17,6 @@ namespace MasterDataUt.Controller
         LibraryUser findByLibraryUserNICAndLibraryUserUID(int libraryUserUID, string NIC);   
         List<LibraryUser> findByActiveAll();
         int getNextSequenceNo();
+        int getTotalActiveUserCount();
     }
 }

@@ -48,6 +48,8 @@
     <Compile Include="Controller\BookControllerImpl.cs" />
     <Compile Include="Controller\BorrowingBooksController.cs" />
     <Compile Include="Controller\BorrowingBooksControllerImpl.cs" />
+    <Compile Include="Controller\DashBoardController.cs" />
+    <Compile Include="Controller\DashBoardControllerImpl.cs" />
     <Compile Include="Controller\LibraryUserCategoryController.cs" />
     <Compile Include="Controller\LibraryUserCategoryControllerImpl.cs" />
     <Compile Include="Controller\LibraryUserController.cs" />

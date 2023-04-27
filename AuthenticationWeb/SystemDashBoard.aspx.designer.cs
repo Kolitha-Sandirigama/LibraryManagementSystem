@@ -15,39 +15,39 @@ namespace LibrarySystemWeb
     {
 
         /// <summary>
-        /// lblTotalEstimate control.
+        /// lblTotalBooks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTotalEstimate;
+        protected global::System.Web.UI.WebControls.Label lblTotalBooks;
 
         /// <summary>
-        /// lblTotalBill control.
+        /// lblTotalUsers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTotalBill;
+        protected global::System.Web.UI.WebControls.Label lblTotalUsers;
 
         /// <summary>
-        /// lblInprogessEstimate control.
+        /// lblAvailableBooks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblInprogessEstimate;
+        protected global::System.Web.UI.WebControls.Label lblAvailableBooks;
 
         /// <summary>
-        /// lblInprogressBills control.
+        /// lblBorrowingBooks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblInprogressBills;
+        protected global::System.Web.UI.WebControls.Label lblBorrowingBooks;
     }
 }

@@ -33,7 +33,7 @@
                     
                     <tr>
                         <td>
-                            <asp:Label ID="lblTotalEstimate" runat="server" Text="0"></asp:Label>
+                            <asp:Label ID="lblTotalBooks" runat="server" Text="0"></asp:Label>
                         </td>
                     </tr>
                      <tr>
@@ -56,7 +56,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="lblTotalBill" runat="server" Text="0"></asp:Label>
+                            <asp:Label ID="lblTotalUsers" runat="server" Text="0"></asp:Label>
                         </td>
                     </tr>
                      <tr>
@@ -77,7 +77,7 @@
                     
                     <tr>
                         <td>
-                            <asp:Label ID="lblInprogessEstimate" runat="server" Text="0"></asp:Label>
+                            <asp:Label ID="lblAvailableBooks" runat="server" Text="0"></asp:Label>
                         </td>
                     </tr>
                      <tr>
@@ -100,7 +100,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="lblInprogressBills" runat="server" Text="0"></asp:Label>
+                            <asp:Label ID="lblBorrowingBooks" runat="server" Text="0"></asp:Label>
                         </td>
                     </tr>
                      <tr>

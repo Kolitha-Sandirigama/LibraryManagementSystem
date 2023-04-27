@@ -48,6 +48,8 @@
     <Compile Include="Controller\EmployeeControllerImpl.cs" />
     <Compile Include="Controller\EmployeeRoleController.cs" />
     <Compile Include="Controller\EmployeeRoleControllerImpl.cs" />
+    <Compile Include="Controller\FunctionController.cs" />
+    <Compile Include="Controller\FunctionControllerImpl.cs" />
     <Compile Include="Controller\RoleController.cs" />
     <Compile Include="Controller\RoleControllerImpl.cs" />
     <Compile Include="Controller\RoleFunctionsController.cs" />
@@ -64,6 +66,8 @@
     <Compile Include="DAL\EmployeeDAOImpl.cs" />
     <Compile Include="DAL\EmployeeRoleDAO.cs" />
     <Compile Include="DAL\EmployeeRoleDAOImpl.cs" />
+    <Compile Include="DAL\FunctionDAO.cs" />
+    <Compile Include="DAL\FunctionDAOImpl.cs" />
     <Compile Include="DAL\RoleDAO.cs" />
     <Compile Include="DAL\RoleDAOImpl.cs" />
     <Compile Include="DAL\RoleFunctionsDAO.cs" />

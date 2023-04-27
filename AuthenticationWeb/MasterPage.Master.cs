@@ -77,10 +77,12 @@ namespace LibrarySystemWeb
                     if (ViewState["FunctionList"] == null)
                     {
                         //get funtion list
-                        
-                        Functions Functions = new Functions();
-                        Functions.UserCode = hdnUserCode.Value;
-                        FunctionsList = Functions.GetUserFunctionCodeList();
+
+                        FunctionController functionController = new FunctionControllerImpl();
+
+       //                 Functions Functions = new Functions();
+       //                 Functions.UserCode = hdnUserCode.Value;
+                        FunctionsList = functionController.GetUserFunctionCodeList(hdnUserCode.Value);
 
                         if (FunctionsList.Count > 0)
                         {
@@ -95,9 +97,9 @@ namespace LibrarySystemWeb
                                 else
                                 {
 
-                                    if (Functions.GetFunctionCodeByPageName(loadingPage) != 0)
+                                    if (functionController.GetFunctionCodeByPageName(loadingPage) != 0)
                                     {
-                                        int pageCode = Functions.GetFunctionCodeByPageName(loadingPage);
+                                        int pageCode = functionController.GetFunctionCodeByPageName(loadingPage);
 
                                         if (!FunctionsList.Exists(delegate(Functions func) { return func.FunctionUID == pageCode; }))
                                         {
@@ -152,12 +154,12 @@ namespace LibrarySystemWeb
 
         protected void lbtnLogout_Click(object sender, EventArgs e)
         {
-            Response.Redirect("UserLogin.aspx");
+            Response.Redirect("/UserLogin.aspx");
         }
 
         protected void lbtnHome_Click(object sender, EventArgs e)
         {
-            Response.Redirect("SystemDashBoard.aspx");
+            Response.Redirect("/SystemDashBoard.aspx");
         }
 
     }
